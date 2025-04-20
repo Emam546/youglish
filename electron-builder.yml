@@ -35,10 +35,5 @@ mac:
 npmRebuild: false
 
 productName: youglish
-publish:
-  - provider: github
-    owner: Emam546
-    repo: youglish
-    releaseType: release
 
 
