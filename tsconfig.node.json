@@ -1,0 +1,23 @@
+{
+  "extends": "@electron-toolkit/tsconfig/tsconfig.node.json",
+  "compilerOptions": {
+    "composite": true,
+    "types": ["electron-vite/node"],
+    "baseUrl": "./",
+    "rootDir": "./",
+    "skipLibCheck": false,
+    "paths": {
+      "@app/*": ["./src/*"],
+      "@shared/*": ["./shared/*"],
+      "@shared/renderer/*": ["./src/renderer/shared/*"],
+      "@utils/*": ["./utils/*"]
+    }
+  },
+  "include": [
+    "./src/main/**/*",
+    "./src/preload/**/*",
+    "utils",
+    "./package.json",
+    "./resources/**/*"
+  ]
+}
