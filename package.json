@@ -42,7 +42,8 @@
     "classnames": "^2.5.1",
     "cross-fetch": "^4.1.0",
     "easydl": "^1.2.0",
-    "innosetup-compiler": "^6.3.1"
+    "innosetup-compiler": "^6.3.1",
+    "publish-release": "^1.6.1"
   },
   "devDependencies": {
     "@electron-toolkit/eslint-config-prettier": "^3.0.0",
