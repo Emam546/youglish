@@ -4,7 +4,9 @@
   "compilerOptions": {
     "composite": true,
     "baseUrl": "./",
-    "skipLibCheck": false,
+    "skipLibCheck": true,
+    "noUnusedLocals": false,
+    
     "paths": {
       "@renderer/*": ["./src/renderer/*"],
       "@shared/*": ["./shared/*"],

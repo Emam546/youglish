@@ -32,7 +32,7 @@ function App(): React.JSX.Element {
     })
   }, [])
   useEffect(() => {
-    return window.api?.on('onToggleWindowState', (e, state) => {
+    return window.api?.on('onToggleWindowState', (_, state) => {
       setMaximizeState(state)
     })
   }, [])

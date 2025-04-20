@@ -5,13 +5,14 @@
     "types": ["electron-vite/node"],
     "baseUrl": "./",
     "rootDir": "./",
-    "skipLibCheck": false,
+    "skipLibCheck": true,
     "paths": {
       "@app/*": ["./src/*"],
       "@shared/*": ["./shared/*"],
       "@shared/renderer/*": ["./src/renderer/shared/*"],
       "@utils/*": ["./utils/*"]
-    }
+    },
+    
   },
   "include": [
     "./src/main/**/*",

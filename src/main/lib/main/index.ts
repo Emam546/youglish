@@ -1,19 +1,11 @@
 import './ipc'
-import {
-  shell,
-  BrowserWindow,
-  BrowserWindowConstructorOptions,
-  globalShortcut,
-  BrowserView,
-  WebContentsView
-} from 'electron'
+import { shell, BrowserWindowConstructorOptions, globalShortcut, WebContentsView } from 'electron'
 import path, { join } from 'path'
-import icon from '../../../../resources/icon.png'
 import { convertFunc } from '@utils/app'
 import { Context } from '@shared/renderer/main'
 import { MainWindow } from './window'
 import fetch from 'cross-fetch'
-import { ElectronBlocker, fullLists, Request } from '@cliqz/adblocker-electron'
+import { ElectronBlocker, fullLists } from '@cliqz/adblocker-electron'
 import { isDev } from '@app/main/utils'
 export async function createMainWindow(
   options: BrowserWindowConstructorOptions,
@@ -24,7 +16,6 @@ export async function createMainWindow(
   const win = new MainWindow({
     show: false,
     autoHideMenuBar: true,
-    ...(process.platform === 'linux' ? { icon } : {}),
     icon: 'build/icon.ico',
     frame: false,
     ...options,

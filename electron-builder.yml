@@ -9,6 +9,7 @@ extraFiles:
     to: "./screenshots"
     filter:
       - "**/icon.*"
+
 directories:
   buildResources: build
   output: dist
@@ -40,15 +41,4 @@ publish:
     repo: youglish
     releaseType: release
 
-win:
-  target:
-    - nsis
-nsis:
-  allowElevation: true
-  allowToChangeInstallationDirectory: true
-  artifactName: temp.${ext}
-  createDesktopShortcut: always
-  oneClick: false  # Set to true if you want one-click installation
-  perMachine: true  # Choose per-machine installation mode
-  createStartMenuShortcut: true  # Creates a start menu shortcut
-  shortcutName: ${productName}
+

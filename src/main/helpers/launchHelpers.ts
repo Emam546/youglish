@@ -1,3 +1,3 @@
-export function lunchArgs(args: string[]) {
+export function lunchArgs(_args: string[]) {
   return null
 }

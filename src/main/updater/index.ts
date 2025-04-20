@@ -19,7 +19,7 @@ app.whenReady().then(async () => {
 autoUpdater.once('update-available', (update) => {
   console.log('update available', update.tag_name)
   console.log('Download the update')
-  autoUpdater.downloadUpdate(update).then((asset) => {
+  autoUpdater.downloadUpdate(update).then(() => {
     autoUpdater.once('updater-downloaded', (savedFilePath) => {
       console.log('update finished')
       autoUpdater.quitAndInstall(savedFilePath)

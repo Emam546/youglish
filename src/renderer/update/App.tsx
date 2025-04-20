@@ -1,9 +1,9 @@
-import { useFitWindow } from "@renderer/utils/hooks";
-import { ComponentRef } from "react";
-import ProgressBar from "./components/progressBar";
+import { useFitWindow } from './utils/hooks'
+import { ComponentRef } from 'react'
+import ProgressBar from './components/progressBar'
 
-function App(): JSX.Element {
-  const ref = useFitWindow<ComponentRef<"div">>([]);
+function App() {
+  const ref = useFitWindow<ComponentRef<'div'>>([])
 
   return (
     <>
@@ -12,7 +12,7 @@ function App(): JSX.Element {
         <ProgressBar />
       </div>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

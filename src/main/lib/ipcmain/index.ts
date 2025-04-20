@@ -41,7 +41,7 @@ export function OpenFileWith(filePath: string) {
     });
 }
 export function OpenFolder(filePath: string) {
-    return new Promise((res, rej) => {
+    return new Promise((res) => {
         let command: string;
         switch (process.platform) {
             case "win32":
@@ -50,7 +50,7 @@ export function OpenFolder(filePath: string) {
             default:
                 throw new Error(`Unsupported platform: ${process.platform}`);
         }
-        exec(command, (err) => {
+        exec(command, () => {
             res(true);
         });
     });
